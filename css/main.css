@@ -711,4 +711,6 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .hide{display:none;}
 .show{display:block;}
 .invisible{visibility:hidden;}
-#navigation{position:fixed;top:50%;left:0px;margin-top:-100px;}#navigation ul{list-style:none;margin:0px;padding:0px;}#navigation ul li a{display:block;padding:5px 10px;background-color:#EEE;text-decoration:none;}#navigation ul li a:hover{background-color:#DDD;text-decoration:none;}
+.slide{position:relative;z-index:50;}.slide a.next{font-size:1.2em;font-weight:bold;}
+#navigation{position:fixed;top:50%;left:20px;margin-top:-100px;z-index:100;background-color:rgba(255, 255, 255, 0.8);-moz-box-shadow:0px 0px 2px rgba(0, 0, 0, 0.2);-webkit-box-shadow:0px 0px 2px rgba(0, 0, 0, 0.2);box-shadow:0px 0px 2px rgba(0, 0, 0, 0.2);}#navigation ul{list-style:none;margin:0px;padding:0px;border:1px solid #DDD;}#navigation ul li{border-bottom:1px solid #EEE;}#navigation ul li:last-child{border-bottom:0px;}
+#navigation ul li a{display:block;padding:10px 25px;text-decoration:none;}#navigation ul li a:hover{background-color:#EEE;text-decoration:none;}
