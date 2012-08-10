@@ -3,10 +3,31 @@ window.onload = function() {
 	enableSmoothScroll();
 	adjustSlideSizes();
 
-	
+	//re-create the dynamic design elements for new sizes when window is re-sized
+	$(window).resize(function () {
+		adjustSlideSizes();
+ 	});
 
+
+ 	
+
+	//init some bootstrap features
+	$('a[rel="popover"]').popover({
+			delay: { show: 300, hide: 200 }
+		});
+
+	$(window).scroll(function () {
+		$('a[rel="popover"]').popover('hide')
+ 	});
+
+
+	$('a[rel="tooltip"]').tooltip();
+
+	
+	$('#productTour').hide();
 	//show the nav bar after a dealy
-	//setTimeout("$('#navigation').show('slide', { direction: 'down' }, 300);",1200);
+	setTimeout("$('#productTour').show('slide', { direction: 'down' }, 300);",1500);
+
 		
 }
 
