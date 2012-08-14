@@ -726,8 +726,8 @@ h2{font-size:1.3em;}
 .slide#AboutUs h2{font-size:1.1em;color:#FFF;}
 .slide#AboutUs h3{color:#FFF;font-weight:normal;font-size:1.1em;}
 #Footer{background-color:rgba(0, 0, 0, 0.7);width:100%;height:100px;padding-top:30px;color:#666;}
-.box{background-color:rgba(255, 255, 255, 0.5);padding:25px 30px 10px;margin-bottom:20px;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;}
-.signUpTeaser{text-align:left;}.signUpTeaser p{font-size:1.8em;line-height:1.5em;margin-bottom:1.5em;}
+.box{background-color:rgba(255, 255, 255, 0.5);padding:25px 30px 10px;margin-bottom:20px;color:#333;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;-moz-box-shadow:0px 3px 8px rgba(0, 0, 0, 0.4);-webkit-box-shadow:0px 3px 8px rgba(0, 0, 0, 0.4);box-shadow:0px 3px 8px rgba(0, 0, 0, 0.4);}
+.signUpTeaser{text-align:left;}.signUpTeaser p{font-size:1.8em;line-height:1.5em;margin-bottom:1.5em;-moz-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.4);-webkit-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.4);text-shadow:0px 1px 0px rgba(255, 255, 255, 0.4);}
 .signUpTeaser a.btn{font-size:1.3em;}
 .tagline{font-size:1.8em;line-height:1.5em;margin:0px 0px 1.8em 0px;text-align:center;padding-bottom:0.5em;border-bottom:2px dashed rgba(0, 0, 0, 0.1);}
 .largeCopy{font-size:1.2em;line-height:1.5em;margin:0px 0px 1em 0px;}
