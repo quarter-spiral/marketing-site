@@ -22,12 +22,6 @@ window.onload = function() {
 
 
 	$('a[rel="tooltip"]').tooltip();
-
-	
-	$('#productTour').hide();
-	//show the nav bar after a dealy
-	setTimeout("$('#productTour').show('slide', { direction: 'down' }, 300);",1500);
-
 		
 }
 
@@ -36,7 +30,7 @@ window.onload = function() {
 function adjustSlideSizes() {
 
 	//adjust slides to fill the browser window
-	$('div[class^="slide"]').css('height',$(window).height());
+	$('div[class^="slide"]').css('height',$(window).height()-40);
 	$('div[class^="slide"]').css('width',$(window).width());
 
 }

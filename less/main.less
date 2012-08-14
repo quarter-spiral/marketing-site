@@ -19,6 +19,28 @@ h2 {
 	font-size:1.3em;
 }
 
+.next {
+	position:absolute;
+	bottom:20px;
+	font-size:1.2em;
+	display: inline-block;
+	margin-top:2em;
+	background-color:rgba(0,0,0,0.5);
+	padding:5px 15px 8px 12px;
+	color:#FFF;
+	.rounded-corners (5px);
+	.box-shadow(0px, 2px, 0px, rgba(0,0,0,0.4));
+	.text-shadow(0px, -1px, 0px, rgba(0,0,0,0.3));
+	font-weight:bold;
+	i {
+		vertical-align: bottom;
+	}
+	&:hover {
+		color:#FFF;
+		text-decoration:none;
+	}
+}
+
 .slide {
 	position:relative;
 	z-index:50;
@@ -148,42 +170,6 @@ h2 {
 	font-size:1.2em;
 	line-height:1.5em;
 	margin:0px 0px 1em 0px;
-}
-
-#productTour {
-	position:fixed;
-	bottom:0px;
-	left:0px;
-	right:0px;
-	z-index:100;
-	ul {
-		list-style:none;
-		margin:0px;
-		padding:0px;
-		border-top:1px solid #000;
-		width:100%;
-		.box-shadow(0px, -2px, 0px, rgba(0,0,0,0.2));
-		.gradient(rgb(50,50,50),rgb(10,10,10));
-		text-align:center;
-		li {
-			display:inline-block;
-			font-size:1.2em;
-			font-weight:bold;
-			height:50px;
-			line-height:50px;
-			padding:0px 10px;
-			color:#FF0;
-			a {
-				display:block;
-				text-decoration:none;
-				.text-shadow(0px, -1px, 0px, rgba(0,0,0,0.3));
-				color:#FFF;
-				&:hover {
-					text-decoration:none;
-				}
-			}
-		}
-	}
 }
 
 
