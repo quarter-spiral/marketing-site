@@ -712,10 +712,10 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .show{display:block;}
 .invisible{visibility:hidden;}
 body{background:#000000 url('../images/stars.jpg') no-repeat fixed left top;background-size:100%;}
-h1{margin:80px 0px 20px 0px;font-size:4em;color:#FFF;-moz-text-shadow:0px -1px 0px rgba(0, 0, 0, 0.3);-webkit-text-shadow:0px -1px 0px rgba(0, 0, 0, 0.3);text-shadow:0px -1px 0px rgba(0, 0, 0, 0.3);}
+h1{margin:80px 0px 10px 0px;font-size:4em;color:#FFF;-moz-text-shadow:0px -1px 0px rgba(0, 0, 0, 0.3);-webkit-text-shadow:0px -1px 0px rgba(0, 0, 0, 0.3);text-shadow:0px -1px 0px rgba(0, 0, 0, 0.3);text-align:center;}
 h2{font-size:1.3em;}
-.next{position:absolute;bottom:20px;font-size:1.2em;display:inline-block;margin-top:2em;background-color:rgba(0, 0, 0, 0.5);padding:5px 15px 8px 12px;color:#FFF;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;-moz-box-shadow:0px 2px 0px rgba(0, 0, 0, 0.4);-webkit-box-shadow:0px 2px 0px rgba(0, 0, 0, 0.4);box-shadow:0px 2px 0px rgba(0, 0, 0, 0.4);-moz-text-shadow:0px -1px 0px rgba(0, 0, 0, 0.3);-webkit-text-shadow:0px -1px 0px rgba(0, 0, 0, 0.3);text-shadow:0px -1px 0px rgba(0, 0, 0, 0.3);font-weight:bold;}.next i{vertical-align:bottom;}
-.next:hover{color:#FFF;text-decoration:none;}
+.next{position:absolute;bottom:40px;left:0px;right:0px;font-size:1.2em;text-align:center;}.next a{background-color:rgba(0, 0, 0, 0.5);padding:5px 15px 8px 12px;color:#FFF;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;-moz-box-shadow:0px 2px 0px rgba(0, 0, 0, 0.4);-webkit-box-shadow:0px 2px 0px rgba(0, 0, 0, 0.4);box-shadow:0px 2px 0px rgba(0, 0, 0, 0.4);-moz-text-shadow:0px -1px 0px rgba(0, 0, 0, 0.3);-webkit-text-shadow:0px -1px 0px rgba(0, 0, 0, 0.3);text-shadow:0px -1px 0px rgba(0, 0, 0, 0.3);font-weight:bold;}.next a i{vertical-align:bottom;}
+.next a:hover{color:#FFF;text-decoration:none;}
 .slide{position:relative;z-index:50;-moz-box-shadow:0px 3px 2px rgba(0, 0, 0, 0.2);-webkit-box-shadow:0px 3px 2px rgba(0, 0, 0, 0.2);box-shadow:0px 3px 2px rgba(0, 0, 0, 0.2);}.slide#Money{background-color:#F1BBBA;color:#6B5344;}.slide#Money h1{color:#0B517D;-moz-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.7);-webkit-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.7);text-shadow:0px 1px 0px rgba(255, 255, 255, 0.7);}
 .slide#Pitch{background-color:#C7F464;color:#556270;}.slide#Pitch h1{color:#458DAC;-moz-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);-webkit-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);}
 .slide#Venues{background-color:#B9D7D9;color:#668284;}.slide#Venues h1{color:#3B5C43;-moz-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.7);-webkit-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.7);text-shadow:0px 1px 0px rgba(255, 255, 255, 0.7);}
@@ -729,7 +729,7 @@ h2{font-size:1.3em;}
 .box{background-color:rgba(255, 255, 255, 0.5);padding:25px 30px 10px;margin-bottom:20px;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;}
 .signUpTeaser{text-align:left;}.signUpTeaser p{font-size:1.8em;line-height:1.5em;margin-bottom:1.5em;}
 .signUpTeaser a.btn{font-size:1.3em;}
-.tagline{font-size:1.8em;line-height:1.5em;margin:0.8em 0px 2em 0px;}
+.tagline{font-size:1.8em;line-height:1.5em;margin:0px 0px 1.8em 0px;text-align:center;padding-bottom:0.5em;border-bottom:2px dashed rgba(0, 0, 0, 0.1);}
 .largeCopy{font-size:1.2em;line-height:1.5em;margin:0px 0px 1em 0px;}
 #navigation{position:fixed;top:15px;right:0px;left:0px;height:30px;z-index:100;}#navigation ul{list-style:none;float:right;margin:0px;padding:0px;text-align:right;border:2px solid #000;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;-moz-box-shadow:0px 3px 2px rgba(0, 0, 0, 0.2);-webkit-box-shadow:0px 3px 2px rgba(0, 0, 0, 0.2);box-shadow:0px 3px 2px rgba(0, 0, 0, 0.2);background-image:linear-gradient(bottom, #323232 0%, #0a0a0a 100%);background-image:-o-linear-gradient(bottom, #323232 0%, #0a0a0a 100%);background-image:-moz-linear-gradient(bottom, #323232 0%, #0a0a0a 100%);background-image:-webkit-linear-gradient(bottom, #323232 0%, #0a0a0a 100%);background-image:-ms-linear-gradient(bottom, #323232 0%, #0a0a0a 100%);}#navigation ul li{display:inline-block;border-right:1px solid #000;height:30px;}#navigation ul li:last-child{border-right:0px;}
 #navigation ul li a{display:block;line-height:30px;padding:0px 15px;text-decoration:none;color:#CCC;}#navigation ul li a:hover{text-decoration:none;color:#FFF;}

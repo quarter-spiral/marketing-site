@@ -30,7 +30,7 @@ window.onload = function() {
 function adjustSlideSizes() {
 
 	//adjust slides to fill the browser window
-	$('div[class^="slide"]').css('height',$(window).height()-40);
+	$('div[class^="slide"]').css('height',$(window).height());
 	$('div[class^="slide"]').css('width',$(window).width());
 
 }
