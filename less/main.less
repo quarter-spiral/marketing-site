@@ -8,13 +8,28 @@ body {
 	background-size: 100%;
 }
 
-h1 {
-	margin:80px 0px 10px 0px;
-	font-size:4em;
-	color:#FFF;
-	.text-shadow(0px, -1px, 0px, rgba(0,0,0,0.3));
-	text-align: center;
+.header {
+	padding:60px 20px 10px 40px;
+	.gradient(rgba(255,255,255,1),rgba(255,255,255,0));
+	margin:-15px -40px 30px -40px;
+	.rounded-corners (3px);
+	h1 {
+		margin:0px 0px 10px 0px;
+		font-size:4em;
+		color:#3B5C43;
+		.text-shadow(0px, -1px, 0px, rgba(0,0,0,0.3));
+		text-align: left;
+	}
+	.tagline {
+		font-size:1.8em;
+		line-height:1.5em;
+		margin:0px 0px 0px 0px;
+		text-align: left;
+	}
 }
+
+
+
 
 h2 {
 	font-size:1.3em;
@@ -124,6 +139,9 @@ h2 {
 		p {
 			color:#DDD;
 		}
+		h1 {
+			color:#FFF;
+		}
 		h2 {
 			font-size:1.1em;
 			color:#FFF;
@@ -132,6 +150,9 @@ h2 {
 			color:#FFF;
 			font-weight:normal;
 			font-size:1.1em;
+		}
+		.header {
+			.gradient(rgba(0,0,0,1),rgba(0,0,0,0));
 		}
 	}
 }
@@ -165,15 +186,6 @@ h2 {
 	a.btn {
 		font-size:1.3em;
 	}
-}
-
-.tagline {
-	font-size:1.8em;
-	line-height:1.5em;
-	margin:0px 0px 1.8em 0px;
-	text-align: center;
-	padding-bottom:0.5em;
-	border-bottom:2px dashed rgba(0,0,0,0.1);
 }
 
 .largeCopy {
