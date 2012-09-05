@@ -30,7 +30,7 @@ window.onload = function() {
 function adjustSlideSizes() {
 
 	//adjust slides to fill the browser window
-	$('div[class^="slide"]').css('height',$(window).height());
+	$('div[class^="slide"]').css('height',$(window).height()-30);
 	$('div[class^="slide"]').css('width',$(window).width());
 
 }
@@ -43,7 +43,7 @@ function enableSmoothScroll() {
         var id = $(this).attr("href");
 
         // An offset to push the content down from the top.
-        var offset = 0;
+        var offset = 30;
 
         // Our scroll target : the top position of the
         // section that has the id referenced by our href.
