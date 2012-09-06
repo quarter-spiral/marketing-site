@@ -712,22 +712,23 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .show{display:block;}
 .invisible{visibility:hidden;}
 body{background:#000000 url('../images/stars.jpg') no-repeat fixed left top;background-size:100%;}
-.header{padding:80px 0px 60px 0px;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;text-align:center;}.header h1{margin:0px 0px 5px 0px;font-size:3.5em;line-height:1.1em;color:#3B5C43;-moz-text-shadow:0px -1px 0px rgba(0, 0, 0, 0.3);-webkit-text-shadow:0px -1px 0px rgba(0, 0, 0, 0.3);text-shadow:0px -1px 0px rgba(0, 0, 0, 0.3);font-weight:bold;}
-.header .tagline{font-size:1.5em;line-height:1.5em;-moz-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.4);-webkit-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.4);text-shadow:0px 1px 0px rgba(255, 255, 255, 0.4);margin:0px 0px 0px 0px;font-weight:normal;}
+.header{padding:80px 0px 60px 0px;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;text-align:center;}.header h1{margin:0px 0px 5px 0px;font-size:3.5em;line-height:1.1em;color:#3B5C43;font-weight:bold;}
+.header .tagline{font-size:1.5em;line-height:1.5em;margin:0px 0px 0px 0px;font-weight:normal;}
 h2{font-size:1.3em;}
 .next{position:absolute;bottom:60px;font-size:1em;text-align:left;}.next a{padding:5px 15px 8px 12px;color:#FFF;padding:10px 15px;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;-moz-box-shadow:0px 3px 2px rgba(0, 0, 0, 0.2);-webkit-box-shadow:0px 3px 2px rgba(0, 0, 0, 0.2);box-shadow:0px 3px 2px rgba(0, 0, 0, 0.2);background-image:linear-gradient(bottom, #323232 0%, #0a0a0a 100%);background-image:-o-linear-gradient(bottom, #323232 0%, #0a0a0a 100%);background-image:-moz-linear-gradient(bottom, #323232 0%, #0a0a0a 100%);background-image:-webkit-linear-gradient(bottom, #323232 0%, #0a0a0a 100%);background-image:-ms-linear-gradient(bottom, #323232 0%, #0a0a0a 100%);line-height:30px;text-decoration:none;color:#CCC;}.next a:hover{color:#FFF;text-decoration:none;}
 .next a strong{color:#FF0;}
 .slide{position:relative;z-index:50;-moz-box-shadow:0px 3px 2px rgba(0, 0, 0, 0.2);-webkit-box-shadow:0px 3px 2px rgba(0, 0, 0, 0.2);box-shadow:0px 3px 2px rgba(0, 0, 0, 0.2);}.slide#Money{background-color:#F1BBBA;color:#6B5344;}.slide#Money h1{color:#0B517D;-moz-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.7);-webkit-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.7);text-shadow:0px 1px 0px rgba(255, 255, 255, 0.7);}
 .slide#Pitch{background-color:#C7F464;color:#556270;}.slide#Pitch h1{color:#458DAC;-moz-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);-webkit-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);}
+.slide#Pitch .tagline{-moz-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.4);-webkit-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.4);text-shadow:0px 1px 0px rgba(255, 255, 255, 0.4);}
 .slide#Connect{background-color:#B9D7D9;color:#668284;}.slide#Connect h1{color:#3B5C43;-moz-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.7);-webkit-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.7);text-shadow:0px 1px 0px rgba(255, 255, 255, 0.7);}
+.slide#Connect .tagline{-moz-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.4);-webkit-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.4);text-shadow:0px 1px 0px rgba(255, 255, 255, 0.4);}
 .slide#Connect ul{list-style:none;padding:0px;margin:0px 0px 1.5em 0px;color:#FF0;}.slide#Connect ul li a{display:block;font-size:1.5em;font-weight:bold;padding:10px 15px 10px 15px;line-height:1.1em;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;}.slide#Connect ul li a:hover{background-color:#FFF;}
 .slide#Connect ul li.special{font-weight:bold;text-decoration:underline;}
 .slide#Features{background-color:#FFED90;color:#7F0036;}.slide#Features h1{color:#FF0000;-moz-text-shadow:0px -1px 0px rgba(0, 0, 0, 0.6);-webkit-text-shadow:0px -1px 0px rgba(0, 0, 0, 0.6);text-shadow:0px -1px 0px rgba(0, 0, 0, 0.6);}
 .slide#AboutUs{background-color:rgba(0, 0, 0, 0.6);}.slide#AboutUs p{color:#DDD;}
 .slide#AboutUs h1{color:#FFF;}
-.slide#AboutUs h2{font-size:1.1em;color:#FFF;}
-.slide#AboutUs h3{color:#FFF;font-weight:normal;font-size:1.1em;}
-.slide#AboutUs .header{background:none;}
+.slide#AboutUs h2{color:#FFF;font-weight:normal;font-size:1.1em;}
+.slide#AboutUs .largeCopy{-moz-text-shadow:0px 1px 2px #000000;-webkit-text-shadow:0px 1px 2px #000000;text-shadow:0px 1px 2px #000000;}
 #Footer{background-color:rgba(0, 0, 0, 0.7);width:100%;height:100px;padding-top:30px;color:#666;}
 .box{background-color:rgba(255, 255, 255, 0.8);padding:25px 0px 10px 30px;margin-bottom:20px;color:#333;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;}
 .signUpTeaser{text-align:left;padding-top:40px;}.signUpTeaser a.btn{font-size:1.6em;line-height:1.5em;}
