@@ -34,7 +34,7 @@ function adjustSlideSizes() {
 	var windowHeight = $(window).height();
 	if (windowHeight > 600) {
 		desiredHeight = windowHeight +60;
-		$('.header').css('padding-top',(windowHeight - 600) / 2 + 80);
+		$('.header').css('padding-top',(windowHeight - 600) / 3 + 80);
 	} else {
 		desiredHeight = 600;
 	}
