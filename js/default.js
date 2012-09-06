@@ -30,7 +30,15 @@ window.onload = function() {
 function adjustSlideSizes() {
 
 	//adjust slides to fill the browser window
-	$('div[class^="slide"]').css('height',$(window).height()-30);
+	var desiredHeight;
+	var windowHeight = $(window).height();
+	if (windowHeight > 600) {
+		desiredHeight = windowHeight +60;
+		$('.header').css('padding-top',(windowHeight - 600) / 2 + 80);
+	} else {
+		desiredHeight = 600;
+	}
+	$('div[class^="slide"]').css('height',desiredHeight);
 	$('div[class^="slide"]').css('width',$(window).width());
 
 }
@@ -43,7 +51,7 @@ function enableSmoothScroll() {
         var id = $(this).attr("href");
 
         // An offset to push the content down from the top.
-        var offset = 30;
+        var offset = -30;
 
         // Our scroll target : the top position of the
         // section that has the id referenced by our href.

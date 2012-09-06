@@ -9,22 +9,23 @@ body {
 }
 
 .header {
-	padding:60px 40px 10px 40px;
-	.gradient(rgba(255,255,255,1),rgba(255,255,255,0));
-	margin:-5px -40px 30px -40px;
+	padding:80px 0px 60px 0px;
 	.rounded-corners (3px);
+	text-align:center;
 	h1 {
-		margin:0px 0px 10px 0px;
-		font-size:4em;
+		margin:0px 0px 5px 0px;
+		font-size:3.5em;
+		line-height:1.1em;
 		color:#3B5C43;
 		.text-shadow(0px, -1px, 0px, rgba(0,0,0,0.3));
-		text-align: left;
+		font-weight:bold;
 	}
 	.tagline {
-		font-size:1.8em;
+		font-size:1.5em;
 		line-height:1.5em;
+		.text-shadow(0px, 1px, 0px, rgba(255,255,255,0.4));
 		margin:0px 0px 0px 0px;
-		text-align: left;
+		font-weight:normal;
 	}
 }
 
@@ -37,25 +38,25 @@ h2 {
 
 .next {
 	position:absolute;
-	bottom:40px;
-	left:0px;
-	right:0px;
-	font-size:1.2em;
-	text-align: center;
+	bottom:60px;
+	font-size:1em;
+	text-align: left;
 	a {
-		background-color:rgba(0,0,0,0.5);
 		padding:5px 15px 8px 12px;
 		color:#FFF;
+		padding:10px 15px;
 		.rounded-corners (5px);
-		.box-shadow(0px, 2px, 0px, rgba(0,0,0,0.4));
-		.text-shadow(0px, -1px, 0px, rgba(0,0,0,0.3));
-		font-weight:bold;
-		i {
-			vertical-align: bottom;
-		}
+		.box-shadow(0px, 3px, 2px, rgba(0,0,0,0.2));
+		.gradient(rgb(10,10,10),rgb(50,50,50));
+		line-height:30px;
+		text-decoration:none;
+		color:#CCC;
 		&:hover {
 			color:#FFF;
 			text-decoration:none;
+		}
+		strong {
+			color:#FF0;
 		}
 	}
 }
@@ -63,7 +64,6 @@ h2 {
 .slide {
 	position:relative;
 	z-index:50;
-	margin-top:30px;
 	.box-shadow(0px, 3px, 2px, rgba(0,0,0,0.2));
 	&#Money {
 		background-color:#F1BBBA;
@@ -94,13 +94,17 @@ h2 {
 			margin:0px 0px 1.5em 0px;
 			color:#FF0;
 			li {
-				font-size:1.5em;
-				padding:10px 15px 15px 15px;
-				line-height:1.1em;
-				display:inline-block;
-				background-color:rgba(0,0,0,0.8);
-				.rounded-corners (5px);
-				margin:0px 5px 8px 0px;
+				a {
+					display:block;
+					font-size:1.5em;
+					font-weight:bold;
+					padding:10px 15px 10px 15px;
+					line-height:1.1em;
+					.rounded-corners (5px);
+					&:hover {
+						background-color: #FFF;
+					}
+				}
 				&.special {
 					font-weight:bold;
 					text-decoration:underline;
@@ -118,9 +122,10 @@ h2 {
 
 	}
 	&#AboutUs {
-		.box-shadow(0px, 3px, 2px, rgba(0,0,0,0));
+		background-color:rgba(0,0,0,0.6);
 		p {
 			color:#DDD;
+			
 		}
 		h1 {
 			color:#FFF;
@@ -149,32 +154,30 @@ h2 {
 }
 
 .box {
-	background-color:rgba(255,255,255,0.5);
-	padding:25px 30px 10px;
+	background-color:rgba(255,255,255,0.8);
+	padding:25px 0px 10px 30px;
 	margin-bottom:20px;
 	color:#333;
 	.rounded-corners (5px);
-	.box-shadow(0px, 3px, 8px, rgba(0,0,0,0.4));
+	//.box-shadow(0px, 3px, 8px, rgba(0,0,0,0.4));
 }
 
 
 .signUpTeaser {
 	text-align:left;
-	p {
-		font-size:1.8em;
-		line-height:1.5em;
-		margin-bottom:1.5em;
-		.text-shadow(0px, 1px, 0px, rgba(255,255,255,0.4));
-	}
+	padding-top:40px;
 	a.btn {
-		font-size:1.3em;
+
+		font-size:1.6em;
+		line-height: 1.5em
 	}
 }
 
 .largeCopy {
-	font-size:1.2em;
-	line-height:1.5em;
-	margin:0px 0px 1em 0px;
+	 	font-size:1.4em;
+		line-height:1.5em;
+		margin-bottom:1em;
+		.text-shadow(0px, 1px, 0px, rgba(255,255,255,0.4));
 }
 
 
@@ -182,7 +185,7 @@ h2 {
 
 #navigation {
 	position:fixed;
-	top:40px;
+	top:20px;
 	right:0px;
 	left:0px;
 	height:30px;
@@ -209,7 +212,6 @@ h2 {
 				line-height:30px;
 				padding:0px 8px;
 				text-decoration:none;
-				font-weight:bold;
 				color:#CCC;
 				&:hover {
 					text-decoration:none;
