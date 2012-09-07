@@ -36,7 +36,8 @@ function adjustSlideSizes() {
 		desiredHeight = windowHeight +60;
 		$('.header').css('padding-top',(windowHeight - 600) / 3 + 80);
 	} else {
-		desiredHeight = 600;
+		desiredHeight = 700;
+		$('p[class^="next"]').hide();
 	}
 	$('div[class^="slide"]').css('height',desiredHeight);
 	$('div[class^="slide"]').css('width',$(window).width());
