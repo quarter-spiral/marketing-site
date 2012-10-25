@@ -1,7 +1,7 @@
 window.onload = function() {
 	
 	enableSmoothScroll();
-	adjustSlideSizes();
+	//adjustSlideSizes();
 
 	//re-create the dynamic design elements for new sizes when window is re-sized
 	$(window).resize(function () {
