@@ -1,19 +1,11 @@
 body{background-color:#000;}
-h2{font-size:1.3em;}
 .slide{position:relative;z-index:50;-moz-box-shadow:0px 3px 2px rgba(0, 0, 0, 0.2);-webkit-box-shadow:0px 3px 2px rgba(0, 0, 0, 0.2);box-shadow:0px 3px 2px rgba(0, 0, 0, 0.2);background-color:#C7F464;background-image:linear-gradient(bottom, #ffffff 0%, #b9d7d9 100%);background-image:-o-linear-gradient(bottom, #ffffff 0%, #b9d7d9 100%);background-image:-moz-linear-gradient(bottom, #ffffff 0%, #b9d7d9 100%);background-image:-webkit-linear-gradient(bottom, #ffffff 0%, #b9d7d9 100%);background-image:-ms-linear-gradient(bottom, #ffffff 0%, #b9d7d9 100%);color:#556270;padding-top:80px;padding-bottom:80px;}.slide .date{font-weight:bold;}
-.slide h1{color:#458DAC;-moz-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);-webkit-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);margin:0px 0px 40px 0px;font-size:2.5em;line-height:1.1em;}
+.slide h1{color:#458DAC;-moz-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);-webkit-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);margin:0px 0px 40px 0px;font-size:2.5em;line-height:1.3em;}
+.slide h2{font-size:1.4em;line-height:1.4em;margin:1.5em 0 1em;}
 .slide p{font-size:1.2em;line-height:1.5em;}
 .slide ol,.slide ul{font-size:1.2em;}.slide ol li,.slide ul li{line-height:1.6em;margin:1em 0px;}
 .slide ul.tags{list-style:none;display:none;margin:1em 0px;padding:0px;}.slide ul.tags li{display:inline-block;margin:0px 2px 2px 0px;}.slide ul.tags li a{color:#FFF;}
 .slide ul.share{list-style:none;text-align:left;margin:0px;padding:0px;}.slide ul.share li{margin:0px;padding:0px;}.slide ul.share li span{color:#556270;}
-.slide#Connect{background-color:#B9D7D9;background-image:linear-gradient(bottom, #ffffff 0%, #b9d7d9 100%);background-image:-o-linear-gradient(bottom, #ffffff 0%, #b9d7d9 100%);background-image:-moz-linear-gradient(bottom, #ffffff 0%, #b9d7d9 100%);background-image:-webkit-linear-gradient(bottom, #ffffff 0%, #b9d7d9 100%);background-image:-ms-linear-gradient(bottom, #ffffff 0%, #b9d7d9 100%);color:#668284;}.slide#Connect h1{color:#3B5C43;-moz-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.7);-webkit-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.7);text-shadow:0px 1px 0px rgba(255, 255, 255, 0.7);}
-.slide#Connect h2{font-size:1.4em;line-height:1.5em;font-weight:bold;color:#3B5C43;margin-bottom:5px;}
-.slide#Connect ul{list-style:none;padding:0px;margin:0px 0px 1.5em 0px;color:#FF0;}.slide#Connect ul li a{display:inline-block;font-size:1.4em;padding:5px 10px;line-height:1.5em;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;}.slide#Connect ul li a:hover{background-color:#FFF;text-decoration:none;}
-.slide#Connect ul li.special{font-weight:bold;text-decoration:underline;}
-.slide#Connect ul li i{vertical-align:5%;}
-#Footer{background-color:rgba(0, 0, 0, 0.7);width:100%;height:100px;padding-top:30px;color:#666;}#Footer ul{list-style:none;margin:0px;padding:0px;}
-.box{background-color:rgba(255, 255, 255, 0.8);padding:25px;margin-bottom:20px;color:#333;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;}
-.signUpTeaser{border-left:1px solid rgba(0, 0, 0, 0.5);padding-left:20px;}.signUpTeaser a.btn{font-size:1.4em;line-height:1.4em;}.signUpTeaser a.btn strong{text-decoration:underline;}
-.largeCopy{font-size:1.4em;line-height:1.5em;margin-bottom:1em;-moz-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.4);-webkit-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.4);text-shadow:0px 1px 0px rgba(255, 255, 255, 0.4);}
-.content{position:fixed;background-color:#000;top:0px;z-index:100;padding:40px 0px;text-align:center;}.content a{display:inline-block;}
+#footer{background-color:rgba(0, 0, 0, 0.7);width:100%;height:100px;padding-top:30px;color:#666;}#footer ul{list-style:none;margin:0px;padding:0px;}
+#sideBar .content{position:fixed;background-color:#000;top:0px;z-index:100;padding:40px 0px;text-align:center;}#sideBar .content a{display:inline-block;}
 #navigation{line-height:30px;height:30px;color:#999;z-index:80;background-color:#FFF;border-bottom:1px solid #999;}
