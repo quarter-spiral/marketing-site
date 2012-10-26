@@ -2,10 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>The Blog</title>
+    <title>{Title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    {block:Description}
+      <meta name="description" content="{MetaDescription}" />
+    {/block:Description}
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -14,7 +18,24 @@
 
     <!-- Le styles -->
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    
+    <style type="text/css">
+    
+      body{background-color:#000;}
+.slide{position:relative;z-index:50;-moz-box-shadow:0px 3px 2px rgba(0, 0, 0, 0.2);-webkit-box-shadow:0px 3px 2px rgba(0, 0, 0, 0.2);box-shadow:0px 3px 2px rgba(0, 0, 0, 0.2);background-color:#C7F464;background-image:linear-gradient(bottom, #ffffff 0%, #b9d7d9 100%);background-image:-o-linear-gradient(bottom, #ffffff 0%, #b9d7d9 100%);background-image:-moz-linear-gradient(bottom, #ffffff 0%, #b9d7d9 100%);background-image:-webkit-linear-gradient(bottom, #ffffff 0%, #b9d7d9 100%);background-image:-ms-linear-gradient(bottom, #ffffff 0%, #b9d7d9 100%);color:#556270;padding-top:80px;padding-bottom:80px;}.slide .date{font-weight:bold;}
+.slide h1{color:#458DAC;-moz-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);-webkit-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);margin:0px 0px 40px 0px;font-size:2.5em;line-height:1.3em;}
+.slide h2{font-size:1.4em;line-height:1.4em;margin:1.5em 0 1em;}
+.slide p{font-size:1.2em;line-height:1.5em;}
+.slide ol,.slide ul{font-size:1.2em;}.slide ol li,.slide ul li{line-height:1.6em;margin:1em 0px;}
+.slide ul.tags{list-style:none;display:none;margin:1em 0px;padding:0px;}.slide ul.tags li{display:inline-block;margin:0px 2px 2px 0px;}.slide ul.tags li a{color:#FFF;}
+.slide ul.share{list-style:none;text-align:left;margin:0px;padding:0px;}.slide ul.share li{margin:0px;padding:0px;}.slide ul.share li span{color:#556270;}
+#pagination{background-color:#333;margin:0px;}
+#footer{background-color:rgba(0, 0, 0, 0.7);width:100%;height:100px;padding-top:30px;color:#666;}#footer ul{list-style:none;margin:0px;padding:0px;}
+#sideBar .content{position:fixed;background-color:#000;top:30px;z-index:100;padding:40px 0px;text-align:center;}#sideBar .content a{display:inline-block;}
+#navigation{line-height:30px;height:30px;color:#999;z-index:80;background-color:#FFF;border-bottom:1px solid #999;}
+
+    </style>
+
 
     
 
@@ -41,7 +62,12 @@
       <div class="container">
         <div class="row">
           <div class="span12">
-            <p><a href="/"><strong>Quarter Spiral Blog</strong></a> / Title of Post</p>
+            <p>
+              <a href="/"><strong>{Title}</strong></a>
+              {block:PostSummary}
+              / {PostSummary}
+              {/block:PostSummary}
+            </p>
           </div>
         </div>
       </div>
@@ -64,137 +90,103 @@
     </div>
 
 
-    
+    {block:Posts}
+            
 
     <!-- **************** Section **************** -->
 
-    <div class="slide">
+    
+
+        {block:Text}
+
+        <div class="slide">
+          <div class="container">
+        
+            <div class="row">
+              <div class="span6 offset2">
+                {block:Title}
+                  <h1><a href="{Permalink}">{Title}</a></h1>
+                {/block:Title}
+              </div>
+            </div>
+            <div class="row">
+              <div class="span2">
+                {block:Date} 
+                  <p class="date">{Month} {DayOfMonth}{DayOfMonthSuffix}</p>
+                {/block:Date}
+                <ul class="share">
+                  <li st_url='{Permalink}' st_title='{Title}' class='st_facebook' displayText='Facebook'></li>
+                  <li st_url='{Permalink}' st_title='{Title}' class='st_twitter' displayText='Tweet'></li>
+                  <li st_url='{Permalink}' st_title='{Title}' class='st_googleplus' displayText='Google  '></li>
+                  <li st_url='{Permalink}' st_title='{Title}' class='st_pinterest' displayText='Pinterest'></li>
+                  <!-- <li st_url='{Permalink}' st_title='{Title}' class='st_email_large' displayText='Email'></li> -->
+                </ul>
+              </div>
+              <div class="span6">
+                {Body}
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        {/block:Text}
+
+
+
+
+    <!-- **************** Section End **************** -->
+
+
+    {/block:Posts}
+
+
+
+
+
+
+
+    {block:Pagination}
+
+    <div id="pagination">
 
       <div class="container">
 
         <div class="row">
 
           <div class="span6 offset2">
-  
-            <h1><a href="#">Mission Kontrol is a long title that may well run over 2 or even more lines.</a></h1>
 
-          </div>
+            <ul class="pager">
 
-        </div>
+              {block:PreviousPage}
+                <li class="previous">
+                  <a href="{PreviousPage}">&larr; Newer</a>
+                </li>
+              {/block:PreviousPage}
+              
+              
 
-        <div class="row">
-
-          <div class="span2">
-
-            <p class="date">October 24th</p>
-
-            <ul class="share">
-              <li st_url='{Permalink}' st_title='{Title}' class='st_facebook' displayText='Facebook'></li>
-              <li st_url='{Permalink}' st_title='{Title}' class='st_twitter' displayText='Tweet'></li>
-              <li st_url='{Permalink}' st_title='{Title}' class='st_googleplus' displayText='Google  '></li>
-              <li st_url='{Permalink}' st_title='{Title}' class='st_pinterest' displayText='Pinterest'></li>
-              <!-- <li st_url='{Permalink}' st_title='{Title}' class='st_email_large' displayText='Email'></li> -->
+              {block:NextPage}
+                <li class="next">
+                  <a href="{NextPage}">Older &rarr;</a>
+                </li>
+              {/block:NextPage}
             </ul>
-
-
-            <ul class="tags">
-                
-                <li class="label">
-                  <a href="http://blog.quarterspiral.com/tagged/entrepreneurship">entrepreneurship</a>
-                </li>
-                
-                <li class="label">
-                  <a href="http://blog.quarterspiral.com/tagged/productivity">productivity</a>
-                </li>
-                
-                <li class="label">
-                  <a href="http://blog.quarterspiral.com/tagged/scrum">scrum</a>
-                </li>
-                
-                <li class="label">
-                  <a href="http://blog.quarterspiral.com/tagged/startup">startup</a>
-                </li>
-                
-                <li class="label">
-                  <a href="http://blog.quarterspiral.com/tagged/virtual-team">virtual team</a>
-                </li>
-                
-                <li class="label">
-                  <a href="http://blog.quarterspiral.com/tagged/software-development">software development</a>
-                </li>
-                
-              </ul>
           </div>
-
-
-          <div class="span6">
-
-            <p>By Alex Kohlhofer</p>
-
-            <p>Mission Kontrol by <a rel="popover" href="#AboutUs" title="Quarter Spiral" data-content="Learn about our company, our mission and and our team." data-placement="top">Quarter Spiral</a> is the DIY publishing service for Online, Social and Mobile games.</p>
-
-            <p>The tools and services made by opinionated people can be a blessing and a curse. They are a blessing if the team is ready to fully embrace the philosophy that shaped them; they are a curse if the team is not fully bought into the tool’s approach to working and want to modify to map to the way the team is accustomed to.&nbsp;</p>
-
-            <p>When selecting tools and services to enhance your team’s productivity, there are two fundamentally different options:</p>
-
-            <ol>
-              <li>The team can model its workflow around the tools they’ll love to use</li>
-              <li>The team can select/customize/hack the tools that fit their desired workflow</li>
-            </ol>
-
-            <p>Option 1 can transform how you work. It is also a lot easier because people who go to the effort of creating strongly opinionated tools &amp; services put a lot of effort into understanding and solving specific problems. Unless the primary goal of your venture is to solve those very same problems your home-brewed solution is likely inferior to the opinionated solution. And if it is not your team may want to consider a pivoting on the strength of your home-brew!&nbsp;</p>
-
-            <p>When a team tries to shoehorn a great tool into a work flow it was not intended for, the result is generating a lot of friction while extracting a fraction of the tool’s potential value. There are of course some tools that impress with seemingly infinite customization and flexibility. They try to fit every team’s needs. More often than not these Swiss Army knives leave your team confused with complexity and options no one cares to master. Tools that do anything while doing nothing well don’t increase productivity, they tax it.&nbsp;</p>
-
-            <h2>What is an opinionated tool? What is an opinionated tool? What is an opinionated tool?</h2>
-
-            <p>Simply stated, an opinionated tool is a tool that has an opinion about how a task should be done, and enforces that opinion through its interface and implmentation. For example, a Phillips head screwdriver has an opinion about how you should fasten materials together - it believes that you should use a screw with a cross indentation on its head. You of course can use the Phillips head’s handle to hammer in nails with flat heads, but you are much better off using a hammer for this purpose.&nbsp;</p>
-
-            <p>Although the idea of an opinionated tool seems obvious when looking at physical hardware, it is less obvious when applied to software development tools. Metaphorically speaking, lots of teams pick up a phillips head screwdriver and attempt to use it for hammering because hammering is what they are used to. You can generally spot an opinionated tool because:</p>
-
-            <ul><li>It has few settings and these settings do not affect fundamental properties.&nbsp;</li>
-            <li>The creators expect your team to do things in certain ways and the tools are very vocal about it.</li>
-            <li>Your team either loves it deeply or hates it passionately.</li>
-            <li>It force your team to see and act differently than they are used to.</li>
-            <li>It not only helps your team get the job done but also make them better at what it they are doing.</li>
-            </ul>
-
-            <p>At <a href="http://www.quarterspiral.com" target="_blank">Quarter Spiral</a>, there are two opinionated tools we have implemented in our work flow from our first sprint.</p>
-
-            <p><strong><a href="https://idonethis.com/" target="_blank">IDoneThis</a></strong></p>
-
-            <p>IDoneThis sends you an email at the end of the day asking you what you got done. In the morning it distributes a digest of all the responses to the team. Dead simple. At Quarter Spiral these updates arrive about half an hour before the daily stand ups so that every team member shows up prepared and equipped with knowledge.</p>
-
-            <p>IDoneThis delivers on their promise: “Our approach is to build software that you don’t have to remember to use. We’re focused on keeping it simple and lightweight, because software should amplify what you get done, not get in the way.”</p>
-
-            <p>Their <a href="http://blog.idonethis.com/" target="_blank">blog</a> is full of productivity wisdom as well.</p>
-
-            <p><strong><a href="https://www.pivotaltracker.com/" target="_blank">Pivotal Tracker</a></strong></p>
-
-            <p>You are agile and you do some flavor of scrum. But are you actually reaping the benefits of agile methodology? Do you know your team’s velocity? Are your estimates consistent? Pivotal Tracker has the lofty goal of keeping you “on target with Tracker’s continuous, automatic prediction of milestone completion dates, based on your team’s performance.” And that is exactly what it forces on you. No excuses, no escape. Brilliant.</p>
-
-            <p><strong>In conclusion</strong></p>
-
-            <p><a href="http://www.quarterspiral.com" target="_blank">Quarter Spiral</a> is in the business of creating services, too. We are also very opinionated about how game publishing should work. We work very hard to someday soon earn our place in your tool belt so you can create and play even better games. If you are a game developer with a strong opinion on how game publishing should work, <a href="mailto:info@quarterspiral.com" target="_blank">reach out to us</a>. We’d love to hear your opinions as we shape our service.</p>
-
-                        
-
-          </div>
-
-
-
         </div>
-            
       </div>
-
-      
 
     </div>
 
+    {/block:Pagination}
 
 
 
-    <!-- **************** Section End **************** -->
+
+
+
+
 
     <div id="footer">
 
@@ -214,7 +206,7 @@
 
 
             <ul class="links">
-              <li><a href="http://blog.quarterspiral.com" target="new">Tumblr</a></li>
+              <li><a href="http://quarterspiral.com" target="new">Quarter Spiral</a></li>
               <li><a href="http://www.twitter.com/quarterspiral" target="new">Twitter</a></li>
               <li><a href="http://www.facebook.com/pages/Quarter-Spiral/478788575475075">Facebook</a></li>
               <li><a href="https://plus.google.com/u/0/b/115985724291808650340/115985724291808650340/posts">Google+</a></li>
