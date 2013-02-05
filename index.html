@@ -39,22 +39,40 @@
 
  <body>
 
-    <div id="navigation">
-      <div class="container">
-        <div class="row">
-          <div class="span12">
-            <ul>
-              <li><a href="#Pitch" rel="popover" title="Mission Kontrol" data-content="Learn about our product and sign up for the forthcoming beta." data-placement="bottom"><i class="icon-home icon-white"></i></a></li>
-              <li><a href="#AboutUs" rel="popover" title="Quarter Spiral" data-content="Learn about our company, our mission and and our team." data-placement="bottom"><i class="icon-info-sign icon-white"></i></a></li>
-              <li><a href="#Connect" rel="popover" title="Connect" data-content="Connect with Quarter Spiral. We love talking games and tech." data-placement="bottom"><i class="icon-star icon-white"></i></a></li>
-              <li><a href="http://blog.quarterspiral.com" target="new" rel="popover" title="Blog" data-content="Visit our blog to see the latest from Quarter Spiral." data-placement="bottom"><i class="icon-leaf icon-white"></i></a></li>
+  <div id="brandHeader">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <img src="images/QS-logo.png" width="250" height="220" class="logoLarge" />
 
-              
-            </ul>
-           </div>
+          <h1>Quarter Spiral</h1>
+
+          <p class="tagline">Our mission is to change game publishing<p>
         </div>
       </div>
     </div>
+  </div>
+
+  <div id="topBar" ng-controller="navigationController">
+    <div class="container">
+      <div class="row">
+
+        <div class="span12">
+
+          <ul class="unstyled">
+
+              <li><a href="#Pitch">Mission Kontrol</a></li>
+              <li><a href="#AboutUs">About</a></li>
+              <li><a href="#Connect">Contact</a></li>
+              <li><a href="http://blog.quarterspiral.com" target="new"><i class="icon-circle-arrow-right icon-white"></i> Blog</a></li>
+              <li class="topLink pull-right"><a href="#brandHeader"><i class="icon-chevron-up icon-white"></i> Top</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
 
     
 
@@ -128,7 +146,7 @@
           <div class="span12">
 
             <p class="next">
-              <a href="#AboutUs"><i class="icon-arrow-down icon-white"></i> <strong>Next</strong> learn about Quarter Spiral</a>
+              <a href="#AboutUs"><i class="icon-arrow-down"></i> <strong>Next</strong> learn about Quarter Spiral</a>
             </p>
 
           </div>
@@ -155,7 +173,7 @@
             
             <div class="header">
 
-              <img src="images/QS-logo.png" width="250" height="220" id="logoLarge" />
+              <img src="images/QS-logo.png" width="250" height="220" class="logoLarge" />
 
               <h1>Quarter Spiral</h1>
 
@@ -222,7 +240,7 @@
           <div class="span12">
 
             <p class="next">
-              <a  href="#Connect"><i class="icon-arrow-down"></i> <strong>Next</strong> connect with Quarter Spiral</a>
+              <a  href="#Connect"><i class="icon-arrow-down icon-white"></i> <strong>Next</strong> connect with Quarter Spiral</a>
             </p>
 
 

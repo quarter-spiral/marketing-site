@@ -2,6 +2,7 @@ window.onload = function() {
 	
 	enableSmoothScroll();
 	adjustSlideSizes();
+  bootstrapAffix();
 
 	//re-create the dynamic design elements for new sizes when window is re-sized
 	$(window).resize(function () {
@@ -24,6 +25,21 @@ window.onload = function() {
 	$('a[rel="tooltip"]').tooltip();
 		
 }
+
+
+
+
+function bootstrapAffix() {
+
+  var windowWidth = $(window).width();
+  //makes navigation sticky if screen is large enough (same as bootstrap threshold)
+  if (windowWidth > 767) {
+    $('#topBar').affix({offset:240});
+  }
+}
+
+
+
 
 
 
@@ -52,7 +68,7 @@ function enableSmoothScroll() {
         var id = $(this).attr("href");
 
         // An offset to push the content down from the top.
-        var offset = -30;
+        var offset = 0;
 
         // Our scroll target : the top position of the
         // section that has the id referenced by our href.
