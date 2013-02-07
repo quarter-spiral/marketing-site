@@ -39,47 +39,70 @@
 
  <body>
 
-    <div id="brandHeader">
-      <div class="container">
-        <div class="row">
-          <div class="span6 offset3">
-            <img src="images/QS-logo.png" width="250" height="220" class="logoLarge" />
 
-            <h1>Quarter Spiral</h1>
+    <div id="frontPage" class="slide">
 
-            <p class="tagline">Our mission is to change game publishing<p>
+      <div id="brandHeader" class="header">
+        <div class="container">
+          <div class="row">
+            <div class="span3">
+              <img src="images/QS-logo.png" width="250" height="220" class="pull-right" />
+            </div>
+            <div class="span9">
+              <h1>Quarter Spiral</h1>
+              <p class="tagline">Our mission is to change game publishing<p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div id="topBar" ng-controller="navigationController">
-      <div class="container">
-        <div class="row">
 
-          <div class="span12">
+      <div id="topBar">
 
-            <ul class="unstyled">
+        <div class="container">
 
-                <li><a href="#Pitch">Mission Kontrol</a></li>
-                <li><a href="#AboutUs">About</a></li>
-                <li><a href="#Team">Team</a></li>
-                <li><a href="#Connect">Contact</a></li>
-                <li><a href="http://blog.quarterspiral.com" target="new"><i class="icon-circle-arrow-right icon-white"></i> Blog</a></li>
-                <li class="topLink pull-right"><a href="#brandHeader"><i class="icon-chevron-up icon-white"></i> Top</a></li>
-            </ul>
+          <div class="row">
+
+            <div class="span12">
+
+              
+               
+
+                <ul class="unstyled">
+                    <li><a href="#Publish">Publish</a></li>
+                    <li><a href="#Play">Play</a></li>
+                    <li><a href="#AboutUs">About QS</a></li>
+                    <li><a href="#Team">Team</a></li>
+                    <li><a href="#Connect">Contact</a></li>
+                    <li class="topLink"><a href="#frontPage"><i class="icon-chevron-up icon-white"></i> Home</a></li>
+                    <li><a href="http://blog.quarterspiral.com" target="new"><i class="icon-circle-arrow-right icon-white"></i> Blog</a></li>
+                    
+                </ul>
+
+
+              </div>
+
+      
+
+
+            </div>
 
           </div>
 
         </div>
+
       </div>
+
     </div>
+
+    
+
 
     
 
     <!-- **************** Section **************** -->
 
-    <div id="Pitch" class="slide">
+    <div id="Publish" class="slide">
 
       <div class="container">
 
@@ -121,7 +144,61 @@
         </div>
 
         <div class="next">
-          <a href="#AboutUs"><i class="icon-arrow-down icon-white"></i> <strong>Next</strong> learn about Quarter Spiral</a>
+          <a href="#Play"><i class="icon-chevron-down"></i> Play</a>
+        </div>
+            
+      </div>
+
+      
+
+    </div>
+
+
+    <!-- **************** Section **************** -->
+
+    <div id="Play" class="slide">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="span12">
+
+            <div class="header">
+
+              <h1>Spiral Galaxy</h1>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          
+
+          <div class="span4">
+
+            <p class="largeCopy">Mission Kontrol by <a rel="popover" href="#AboutUs" title="Quarter Spiral" data-content="Learn about our company, our mission and and our team." data-placement="top">Quarter Spiral</a> is the DIY publishing service for Online, Social and Mobile games.</p>
+
+            <p class="largeCopy">No negotiation, no compromise on your vision. Just a powerful set of tools to connect you to the players who will love your game.</p>
+
+          </div>
+
+          <div class="span4">
+
+            <p class="largeCopy">Mission Kontrol will help you <strong>find more players</strong> and <strong>make more money</strong>.</p>
+
+            <p><a class="btn btn-large btn-primary" href="http://soon.quarterspiral.com">Sign up for Beta Access</a></p>
+
+          </div>
+
+
+        </div>
+
+        <div class="next">
+          <a href="#AboutUs"><i class="icon-chevron-down"></i> About Quarter Spiral</a>
         </div>
             
       </div>
@@ -171,7 +248,7 @@
   
 
         <div class="next">
-          <a  href="#Team"><i class="icon-arrow-down icon-white"></i> <strong>Next</strong> meet the Quarter Spiral team</a>
+          <a  href="#Team"><i class="icon-chevron-down"></i> The Quarter Spiral Team</a>
         </div>
 
 
@@ -195,7 +272,7 @@
             
             <div class="header">
 
-              <h1>Meet the Quarter Spiral Team</h1>                
+              <h1>The Quarter Spiral Team</h1>                
 
             </div>
 
@@ -264,7 +341,7 @@
         </div>
 
          <div class="next">
-              <a  href="#Connect"><i class="icon-arrow-down icon-white"></i> <strong>Next</strong> connect with Quarter Spiral</a>
+              <a  href="#Connect"><i class="icon-chevron-down"></i> Contact &amp; Connect</a>
           </div>
 
       </div>
@@ -321,6 +398,10 @@
 				
 			     </div>
 
+          </div>
+
+          <div class="next">
+            <a href="#frontPage"><i class="icon-chevron-up"></i> Top</a>
           </div>
 
         </div>

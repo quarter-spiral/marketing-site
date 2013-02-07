@@ -15,10 +15,8 @@ body {
 
 
 #brandHeader {
-  background-color:rgba(0,0,0,0.5);
-  height:280px;
   h1 {
-		margin:80px 0px 5px 0px;
+		margin:30px 0px 5px 0px;
 		font-size:2.5em;
 		line-height:1.1em;
 		font-weight:bold;
@@ -26,12 +24,10 @@ body {
 		.text-shadow(0px, 1px, 2px, rgba(0,0,0,1));
 	}
 	img {
-			margin:50px -20px -60px -60px;
-			float:left;
+			margin:0px -40px 0px 0px;
 	}
 	.tagline {
 		color:#FFF;
-		text-indent: 3px;
 		.text-shadow(0px, 1px, 2px, rgba(0,0,0,1));
 		font-size:1.3em;
 		line-height:1.5em;
@@ -44,24 +40,32 @@ body {
 #topBar {
   width:100%;
   margin-top: -50px;
-  text-align: left;
-  z-index:100;
-  background-color:rgba(0,0,0,0.3);
-  .box-shadow(0px, 1px, 1px, rgba(0,0,0,0.9));
+  text-align: center;
   .topLink {
     	display:none;
     }
   &.affix {
     top:0px;
+    z-index:100 !important;
     background-color:rgba(0,0,0,0.6);
-    margin-top: 0px;
+    .box-shadow(0px, 1px, 1px, rgba(0,0,0,0.9));
+    margin: 0px -20px 0 -20px;
+
     .topLink {
     	display:inline-block;
     }
+    ul {
+    	background-color:transparent;
+    	border-top: 0px;
+    }
   }
   ul {
-    margin:0;
+    margin:0 auto;
+    display: inline-block;
     padding:0px;
+    border-top: 1px solid #DDD;
+    //background-color:rgba(0,0,0,0.6);
+    //.rounded-corners (5px);
     li {
       display: inline-block;
       line-height:50px;
@@ -93,7 +97,6 @@ body {
 
 .header {
 	padding:80px 0px 30px 0px;
-	.rounded-corners (3px);
 	text-align:left;
 	h1 {
 		margin:0px 0px 5px 0px;
@@ -118,20 +121,22 @@ h2 {
 }
 
 .next {
-	position:absolute;
-	bottom:30px;
-	font-size:1.2em;
+	font-size:1em;
 	text-align: left;
+	padding-top: 30px;
+	text-align: right;
 	a {
-		padding:5px 15px 8px 10px;
-		background-color:rgba(0,0,0,0.5);
+		display:inline-block;
+		.box-shadow(0px, 1px, 2px, rgba(0,0,0,0.3));
+		padding:10px 20px 10px 15px;
+		background-color:rgba(255,255,255,0.9);
+		text-transform: uppercase;
 		text-decoration:none;
-		.text-shadow(0px, -1px, 0px, rgba(0,0,0,0.9));
-		color:#EEE;
+		color:#69F;
 		.rounded-corners (5px);
 		&:hover {
 			text-decoration:none;
-			background-color:rgba(0,0,0,0.8);
+			background-color:rgba(255,255,255,1);
 		}
 		strong {
 		}
@@ -142,21 +147,32 @@ h2 {
 }
 
 .slide {
-	position:relative;
-	z-index:50;
+	z-index:10;
 	padding:0 20px 120px 20px;
-	.box-shadow(0px, 3px, 2px, rgba(0,0,0,0.2));
-	&#Pitch {
+	.box-shadow(0px, -3px, 0px, rgba(0,0,0,0.3));
+	//border-bottom: 5px solid #CCC;
+	&#frontPage {
+		background-color:rgba(0,0,0,0.6);
+		color:#FFF;
+	}
+	&#Publish {
 		background-color:#DEF;
-		//.gradient(#C7F464,#E3ECAC);
 		color:#556270;
 		h1 {
 			color:#458DAC;
 			.text-shadow(0px, 1px, 0px, rgba(255,255,255,0.9));
 		}
 	}
+	&#Play {
+		background-color:#EEE;
+		color:#556270;
+		h1 {
+			color:#E54404;
+			.text-shadow(0px, 1px, 0px, rgba(255,255,255,0.9));
+		}
+	}
 	&#Connect {
-		background-color:#000;
+		position:relative;
 		color:#000;
 		iframe {
 			position:absolute;
@@ -173,17 +189,17 @@ h2 {
 			right:0;
 			bottom:0;
 			z-index:-4;
-			background-color:rgba(230,245,255,0.85);
+			background-color:rgba(255,255,255,0.8);
 		}
 		h1 {
-			color:#000;
-			
+			color:#0B2E59;
+			.text-shadow(0px, 1px, 0px, rgba(255,255,255,0.9));
 		}
 		h2 {
 			font-size:1.2em;
 			line-height:1.5em;
-			font-weight:bold;
-			color:#000;
+			color:#0B2E59;
+			.text-shadow(0px, 1px, 0px, rgba(255,255,255,0.9));
 			margin:0 0 5px 0;
 		}
 		ul {
@@ -232,8 +248,8 @@ h2 {
 		p {
 			line-height:1.3em;		}
 		h1 {
-			color:#FF0;
-			.text-shadow(0px, 1px, 1px, rgba(0,0,0,0.5));
+			color:#304860;
+			.text-shadow(0px, 1px, 0px, rgba(255,255,255,0.8));
 		}
 		h2 {
 			color:#999;
