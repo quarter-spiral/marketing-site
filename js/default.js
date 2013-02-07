@@ -34,7 +34,7 @@ function bootstrapAffix() {
   var windowWidth = $(window).width();
   //makes navigation sticky if screen is large enough (same as bootstrap threshold)
   if (windowWidth > 767) {
-    $('#topBar').affix({offset:240});
+    $('#topBar').affix({offset:230});
   }
 }
 
@@ -49,14 +49,13 @@ function adjustSlideSizes() {
 	var desiredHeight;
 	var windowHeight = $(window).height();
 	if (windowHeight > 600) {
-		desiredHeight = windowHeight +60;
+		desiredHeight = windowHeight - 80 - 30;
 		$('.header').css('padding-top',(windowHeight - 600) / 3 + 80);
 	} else {
-		desiredHeight = 700;
+		desiredHeight = 700 - 80;
 		$('p[class^="next"]').hide();
 	}
-	$('div[class^="slide"]').css('height',desiredHeight);
-	$('div[class^="slide"]').css('width',$(window).width());
+	$('div[class^="slide"]').css('min-height',desiredHeight);
 
 }
 
