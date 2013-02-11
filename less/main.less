@@ -2,9 +2,9 @@
 @iconSpritePath: "../bootstrap/img/glyphicons-halflings.png";
 @iconWhiteSpritePath: "../bootstrap/img/glyphicons-halflings-white.png";
 
-@import "bootstrap.min.css";
-@import "bootstrap-responsive.min.css";
-@import "mixins";
+@import "../css/bootstrap.min.css";
+@import "../css/bootstrap-responsive.min.css";
+@import "../css/mixins";
 
 body {
 	background:#000 url('../images/stars.jpg') no-repeat fixed left top;
@@ -23,11 +23,22 @@ body {
 		color:#FF0;
 		.text-shadow(0px, 1px, 2px, rgba(0,0,0,1));
 	}
-	img {
-			margin:0px -40px 0px 0px;
+	
+	@media (min-width: 768px) and (max-width: 979px) { 
+			img {
+					margin-top:20px;
+			}
+	}
+	@media (max-width: 767px) { 
+			h1, .logo, .tagline {
+				text-align: center;	
+			}
+			img {
+					margin:0px auto;
+			}
 	}
 	.tagline {
-		color:#FFF;
+		color:#EEE;
 		.text-shadow(0px, 1px, 2px, rgba(0,0,0,1));
 		font-size:1.3em;
 		line-height:1.5em;
@@ -39,8 +50,7 @@ body {
 
 #topBar {
   width:100%;
-  margin-top: -50px;
-  text-align: center;
+  margin-top: 30px;
   .topLink {
     	display:none;
     }
@@ -50,30 +60,32 @@ body {
     background-color:rgba(0,0,0,0.6);
     .box-shadow(0px, 1px, 1px, rgba(0,0,0,0.9));
     margin: 0px -20px 0 -20px;
-
     .topLink {
     	display:inline-block;
     }
     ul {
     	background-color:transparent;
-    	border-top: 0px;
+    	text-align: center;
     }
   }
+  @media (max-width: 767px) { 
+			ul {
+				text-align: center;	
+			}
+	}
   ul {
     margin:0 auto;
-    display: inline-block;
-    padding:0px;
-    border-top: 1px solid #DDD;
-    //background-color:rgba(0,0,0,0.6);
-    //.rounded-corners (5px);
+    padding:0px 5px;
+    background-color:rgba(0,0,0,0.4);
+    .rounded-corners (5px);
     li {
       display: inline-block;
       line-height:50px;
       font-size: 1.1em;
       a {
         display: block;
-        color:#EEE;
-        padding:0 10px;
+        color:#FFF;
+        padding:0 8px;
         margin:0px;
         font-weight: bold;
         .text-shadow(0px, -1px, 0px, rgba(0,0,0,0.9));
@@ -163,7 +175,7 @@ h2 {
 			.text-shadow(0px, 1px, 0px, rgba(255,255,255,0.9));
 		}
 	}
-	&#Play {
+	&#Games {
 		background-color:#EEE;
 		color:#556270;
 		h1 {
@@ -226,7 +238,7 @@ h2 {
 					text-decoration:underline;
 				}
 				i {
-					vertical-align: 5%;
+					vertical-align: -1px;
 				}
 			}
 		}
