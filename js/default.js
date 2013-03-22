@@ -1,12 +1,12 @@
 window.onload = function() {
 	
 	enableSmoothScroll();
-	adjustSlideSizes();
+	//adjustSlideSizes();
   bootstrapAffix();
 
 	//re-create the dynamic design elements for new sizes when window is re-sized
 	$(window).resize(function () {
-		adjustSlideSizes();
+		//adjustSlideSizes();
  	});
 
 
@@ -67,7 +67,7 @@ function enableSmoothScroll() {
         var id = $(this).attr("href");
 
         // An offset to push the content down from the top.
-        var offset = 0;
+        var offset = 60;
 
         // Our scroll target : the top position of the
         // section that has the id referenced by our href.
