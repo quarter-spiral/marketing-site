@@ -15,7 +15,7 @@ h2{font-size:1.3em;}
 .next{display:none;font-size:1em;text-align:center;padding-top:50px;}.next a{display:inline-block;-moz-box-shadow:0px 1px 2px rgba(0, 0, 0, 0.3);-webkit-box-shadow:0px 1px 2px rgba(0, 0, 0, 0.3);box-shadow:0px 1px 2px rgba(0, 0, 0, 0.3);padding:10px 20px 10px 15px;background-color:rgba(255, 255, 255, 0.9);text-transform:uppercase;text-decoration:none;color:#69F;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;}.next a:hover{text-decoration:none;background-color:#ffffff;}
 .next a i{vertical-align:-10%;}
 .slide{z-index:10;padding:50px 20px 100px 20px;}.slide#frontPage{background-color:rgba(0, 0, 0, 0.4);color:#FFF;padding:100px 0px 0px 0px;}
-.slide#Products{background-color:#DEF;color:#556270;}.slide#Products h1{color:#458DAC;-moz-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);-webkit-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);}
+.slide#Products{background-color:#FFF;color:#556270;}.slide#Products h1{color:#458DAC;-moz-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);-webkit-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);}
 .slide#Products hr{border-top:1px solid #69A;margin:40px 0;}
 .slide#Home{background-color:#EEE;color:#556270;}.slide#Home .bigLines li{margin:1.2em 0;}
 .slide#Home strong.highlight{background-color:rgba(255, 255, 200, 0.8);padding:2px 3px 2px;font-weight:normal;}
@@ -36,6 +36,6 @@ h2{font-size:1.3em;}
 .slide#Team h3{font-size:1.2em;line-height:1.2em;margin:0.5em 0;}
 .slide#Team img{float:left;margin-right:10px;}
 #Footer{background-color:rgba(0, 0, 0, 0.7);height:100px;padding:30px 10px;color:#666;}#Footer ul{list-style:none;margin:0px;padding:0px;}
-.box{background-color:rgba(255, 255, 255, 0.8);padding:25px;margin-bottom:20px;color:#333;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;}
+.box{background-color:rgba(255, 255, 255, 0.8);padding:15px;margin-bottom:5px;color:#333;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;-moz-box-shadow:0px 0px 2px rgba(0, 0, 0, 0.6);-webkit-box-shadow:0px 0px 2px rgba(0, 0, 0, 0.6);box-shadow:0px 0px 2px rgba(0, 0, 0, 0.6);}
 .largeCopy,blockquote{font-size:1.2em;line-height:1.4em;margin-top:1em;margin-bottom:1em;-moz-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.4);-webkit-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.4);text-shadow:0px 1px 0px rgba(255, 255, 255, 0.4);}.largeCopy li,blockquote li{line-height:1.4em;margin:0.5em 0px;}
 blockquote{font-style:italic;}
