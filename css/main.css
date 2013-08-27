@@ -18,10 +18,8 @@ h2{font-size:1.3em;}
 .slide{z-index:10;padding:50px 20px 100px 20px;}.slide#frontPage{background-color:rgba(0, 0, 0, 0.4);color:#FFF;padding:100px 0px 0px 0px;}
 .slide#Products{background-color:#FFF;color:#556270;}.slide#Products h1{color:#458DAC;-moz-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);-webkit-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);}
 .slide#Products hr{margin:40px 0;}
-.slide#Home{padding-top:0px;background:#000000 url('../images/ew/map.jpg') repeat left top;}.slide#Home .bigBlock{background-color:rgba(0, 0, 0, 0.7);padding:15px 0px 30px;}
-.slide#Home .gameDescription{color:#DDD;margin-top:40px;margin-bottom:60px;}.slide#Home .gameDescription p{font-size:1.2em;line-height:1.5em;margin-bottom:20px;}
-.slide#Home .gameHeadline{text-align:right;}.slide#Home .gameHeadline h1{color:#FFF;font-size:3em;font-weight:bold;}
-.slide#Home .gameHeadline p{font-size:1.2em;font-style:italic;color:#AAA;}
+.slide#Home{padding-top:0px;background:#000000 url('../images/ew/map.jpg') repeat left top;}.slide#Home .ew-teaser-text{margin-top:20px;margin-bottom:30px;}.slide#Home .ew-teaser-text p{text-align:center;font-size:1.2em;color:#ffffff;}
+.slide#Home .bigBlock{background-color:rgba(0, 0, 0, 0.7);padding:15px 0px 30px;}
 .slide#Home hr{border-top:1px solid #DDD;margin:40px 0;}
 .slide#Home .largeFlatButton{display:block;color:#FFF;padding:1em;background-color:#079cff;text-align:center;font-size:1.1em;line-height:1.5em;}.slide#Home .largeFlatButton strong{font-size:1em;display:block;}
 .slide#Home .largeFlatButton i{font-size:2em;}
