@@ -8,20 +8,352 @@
 @import "http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css";
 
 body {
-	background-color: #FFF;
-	padding:60px 0px 100px 0px;
+	background:#000 url('../images/stars.jpg') no-repeat fixed left top;
+	background-size: 100%;
+	padding:0;
 	margin:0;
 }
 
-img {
-	margin-top: 50px;
+
+#brandHeader {
+	margin-bottom: 50px;
+  h1 {
+		margin:25px 0px 5px 0px;
+		font-size:1.8em;
+		line-height:1.1em;
+		font-weight:bold;
+		color:#FF0;
+		.text-shadow(0px, 1px, 2px, rgba(0,0,0,1));
+	}
+
+	.logo {
+		text-align: right;
+	}
+	
+	@media (min-width: 768px) and (max-width: 979px) { 
+			img {
+					margin-top:20px;
+			}
+	}
+	@media (max-width: 767px) { 
+			h1, .logo, .tagline {
+				text-align: center;	
+			}
+			img {
+					margin:0px auto;
+			}
+	}
+}
+
+.navigation {
+	width:100%;
+	height:61px;
+	margin-top: 30px;
+}
+#topBar {
+  .topLink {
+    	display:none;
+    }
+  &.affix {
+    top:0px;
+    margin-top: 0px;
+    z-index:100 !important;
+    .box-shadow(0px, 0px, 6px, rgba(0,0,0,0.5));
+    border-bottom: 1px solid #000;
+    background-color:rgba(0,0,0,0.8);
+    .topLink {
+    	display:inline-block;
+    }
+    ul {
+    	background-color: transparent;
+    	border-top: 0px solid #333;
+    }
+  }
+  @media (max-width: 767px) { 
+			ul {
+				text-align: center;	
+			}
+	}
+  ul {
+    margin:0 auto;
+    padding:0px 15px;
+    background-color:rgba(0,0,0,0.8);
+    border-top: 1px solid #333;
+    li {
+      display: inline-block;
+      line-height:60px;
+      font-size: 1.1em;
+      a {
+        display: block;
+        color:#FFF;
+        padding:0 8px;
+        margin:0px;
+        .text-shadow(0px, -1px, 0px, rgba(0,0,0,0.9));
+        &:hover {
+          text-decoration: none;
+          background-color:rgba(0,0,0,0.5);
+        }
+      }
+      &.active {
+        a {
+          color:rgba(255,255,255,1);
+        }
+      }
+    }
+  }
+}
+
+
+
+h1 {
+	margin:30px 0px 20px 0px;
+	font-size:2em;
+	line-height:1.1em;
+	color:#3B5C43;
+	font-weight:normal;
 }
 
 h2 {
-	margin-bottom: 0.5em;
+	font-size:1.3em;
 }
 
-h3 {
-	font-size: 1em;
-	margin-bottom: 0px;
+.next {
+	display:none;
+	font-size:1em;
+	text-align: center;
+	padding-top: 50px;
+	a {
+		display:inline-block;
+		.box-shadow(0px, 1px, 2px, rgba(0,0,0,0.3));
+		padding:10px 20px 10px 15px;
+		background-color:rgba(255,255,255,0.9);
+		text-transform: uppercase;
+		text-decoration:none;
+		color:#69F;
+		.rounded-corners (5px);
+		&:hover {
+			text-decoration:none;
+			background-color:rgba(255,255,255,1);
+		}
+		strong {
+		}
+		i {
+			vertical-align: -10%;
+		}
+	}
 }
+
+.slide {
+	z-index:10;
+	padding:50px 20px 100px 20px;
+	&#frontPage {
+		background-color:rgba(0,0,0,0.4);
+		color:#FFF;
+		padding:100px 0px 0px 0px;
+	}
+	&#Products {
+		background-color:#FFF;
+		color:#556270;
+		h1 {
+			color:#458DAC;
+			.text-shadow(0px, 1px, 0px, rgba(255,255,255,0.9));
+		}
+		hr {
+
+			margin:40px 0;
+		}
+	}
+	&#Home {
+		padding-top:0px;
+		background:#000 url('../images/ew/map.jpg')  repeat left top;
+		.bigBlock {
+			background-color: rgba(0,0,0,0.7);
+			padding: 15px 0px 30px;
+		}
+		.gameDescription {
+			color:#DDD;
+			margin-top: 40px;
+			margin-bottom: 60px;
+			p {
+				font-size: 1.2em;
+				line-height: 1.5em;
+				margin-bottom: 20px;
+			}
+		}
+		.gameHeadline {
+			text-align: right;
+			h1 {
+				color:#FFF;
+				font-size: 3em;
+				font-weight: bold;
+			}
+			p {
+				font-size: 1.2em;
+				font-style: italic;
+				color:#AAA;
+			}
+		}
+		
+		hr {
+			border-top:1px solid #DDD;
+			margin:40px 0;
+		}
+		.largeFlatButton {
+			display:block;
+			color:#FFF;
+			padding:1em;
+			background-color: #079cff;
+			text-align: center;
+			font-size: 1.1em;
+			line-height: 1.5em;
+			strong {
+				font-size: 1em;
+				display:block;
+			}
+			i {
+				font-size: 2em;
+			}
+			&:hover {
+				text-decoration: none;
+				background-color: #83b300;
+			}
+		}
+	}
+	&#Connect {
+		position:relative;
+		color:#000;
+		background-color:#EEE;
+		iframe {
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			z-index:-5;
+		}
+		.mapMask {
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			z-index:-4;
+			background-color:rgba(255,255,255,0.8);
+		}
+		h1 {
+			color:#0B2E59;
+			.text-shadow(0px, 1px, 0px, rgba(255,255,255,0.9));
+		}
+		h2 {
+			font-size:1.2em;
+			line-height:1.5em;
+			color:#0B2E59;
+			.text-shadow(0px, 1px, 0px, rgba(255,255,255,0.9));
+			margin:0 0 5px 0;
+		}
+		ul {
+			list-style: none;
+			padding:0px;
+			margin:0px 0px 1.5em 0px;
+			color:#EEE;
+			li {
+				margin:0 0 0 -10px;
+				a {
+					display:inline-block;
+					font-size:1.2em;
+					padding:5px 10px;
+					line-height:1.5em;
+					font-weight: bold;
+					.rounded-corners (5px);
+					&:hover {
+						background-color: #FFF;
+						text-decoration:none;
+					}
+				}
+				&.special {
+					font-weight:bold;
+					text-decoration:underline;
+				}
+				i {
+					vertical-align: -1px;
+				}
+			}
+		}
+	}
+	&#AboutUs {
+		background-color:rgba(0,0,0,0.6);
+		p {
+			color:#EEE;
+			.text-shadow(0px, 1px, 2px, rgba(0,0,0,1));
+		}
+		h1 {
+			color:#FF0;
+			.text-shadow(0px, 1px, 2px, rgba(0,0,0,1));
+		}
+	}
+	&#Team {
+		background-color:#DDD;
+		color:#000;
+		p {
+			line-height:1.3em;		}
+		h1 {
+			color:#304860;
+			.text-shadow(0px, 1px, 0px, rgba(255,255,255,0.8));
+		}
+		h2 {
+			color:#666;
+			font-size:1.5em;
+			margin: 2em 0 0 0;
+			font-weight: normal;
+			border-bottom: 1px solid #999;
+		}
+		h3 {
+			font-size:1.2em;
+			line-height: 1.2em;
+			margin:0.5em 0;
+		}
+		img {
+			float:left;
+			margin-right:10px;
+		}
+	}
+}
+
+#Footer {
+	background-color:rgba(0,0,0,0.7);
+	height:100px;
+	padding:30px 10px;
+	color:#666;
+	ul {
+		list-style:none;
+		margin:0px;
+		padding:0px;
+	}
+}
+
+.box {
+	background-color:rgba(255,255,255,0.8);
+	padding:15px;
+	margin-bottom:5px;
+	color:#333;
+	.rounded-corners (5px);
+	.box-shadow(0px, 0px, 2px, rgba(0,0,0,0.6));
+}
+
+
+.largeCopy, blockquote {
+	 	font-size:1.2em;
+		line-height:1.4em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		.text-shadow(0px, 1px, 0px, rgba(255,255,255,0.4));
+		li {
+			line-height:1.4em;
+			margin: 0.5em 0px;
+		}
+}
+
+blockquote {
+	font-style: italic;
+}
+
